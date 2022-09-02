@@ -1,0 +1,87 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12 col-ms-12 container-fluid">
+   <div class="col-md-1 col-ms-12">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/leanPartners-logo.jpg" 
+       style="height:80%; width:80% ; margin:10%;"></a>
+    </div> 
+
+    <div class="nav navbar-nav col-md-6 col-ms-12 " id="navbarSupportedContent">
+       
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link "(click)="goToHome()" style="cursor:pointer;">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" (click)="goToM()" style="cursor:pointer;"> Manufacturing</a></li>
+            <li><a class="dropdown-item" (click)="goToQ()" style="cursor:pointer;">Quality</a></li>
+            <li><a class="dropdown-item" (click)="goToE()" style="cursor:pointer;">Environment</a></li>
+            <li><a class="dropdown-item" (click)="goToS()" style="cursor:pointer;">Supply Chain</a></li>
+            <li><a class="dropdown-item" (click)="goToL()" style="cursor:pointer;">Leadership</a></li>
+            <li><a class="dropdown-item" (click)="goToI()" style="cursor:pointer;">Innovation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" (click)="goToContact()" style="cursor:pointer;">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" (click)="goToAboutus()" style="cursor:pointer;">About us</a>
+          </li>
+      </ul>
+ 
+    </div>
+    <div class="col-md-2 col-ms-12" >
+        <div class="input-group">
+            <div class="form-outline-light">
+              <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search"/>
+             
+            </div>
+            <button id="search-button" type="button" class="btn btn-outline-light" style="background-color:rgba(157, 157, 109, 0.725) ; color: black;">
+               <i class="fa fa-search"></i>
+            </button>
+          </div>
+          
+    </div>
+
+
+    <div class="col-md-1 col-ms-12" >
+      <a href="http://localhost:4200/login"><button type="button" class="btn btn-outline" style="background-color:rgba(157, 157, 109, 0.725) ; 
+      color: black;font-weight: 600;margin-left: 20%;"> Sign in </button></a>
+  </div>
+
+    <!--
+ 
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-user"></i> <h1>User</h1>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" (click)="goToM()" style="cursor:pointer;"> Manufacturing</a></li>
+        <li><a class="dropdown-item" (click)="goToQ()" style="cursor:pointer;">Quality</a></li>
+        <li><a class="dropdown-item" (click)="goToE()" style="cursor:pointer;">Environment</a></li>
+        <li><a class="dropdown-item" (click)="goToS()" style="cursor:pointer;">Supply Chain</a></li>
+        <li><a class="dropdown-item" (click)="goToL()" style="cursor:pointer;">Leadership</a></li>
+        <li><a class="dropdown-item" (click)="goToI()" style="cursor:pointer;">Innovation</a></li>
+      </ul>
+    </li>
+  </nav>
+  -->
+
+  <div class="nav-item dropdown col-md-3 col-ms-12" >
+    <button class="btn btn-outline dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%;height: 2%;background-color:rgba(157, 157, 109, 0.725) ; 
+    color: black;font-weight: 600;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-user fa-x2" style="padding:2%;">User</i> 
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="http://localhost:4200/profile" style="cursor:pointer;">Profil</a></li>
+      <li><a class="dropdown-item" href="http://localhost:4200/edit" style="cursor:pointer;">Edit profil</a></li>
+      <li><a class="dropdown-item" href="http://localhost:4200/change-pwd" style="cursor:pointer;">Change password</a></li>
+      <li><a class="dropdown-item" href="http://localhost:4200/mycourses" style="cursor:pointer;">My courses</a></li>
+      <li><a class="dropdown-item" href="http://localhost:4200/addformation" style="cursor:pointer;">Add courses</a></li>
+    </ul>
+  </div>
